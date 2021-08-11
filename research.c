@@ -45,7 +45,7 @@ int i;
         // Calculate the time taken by fun()
         clock_t t;
         t = clock();
-        fun(argc, argv);
+        timed(argc, argv);
         t = clock() - t;
         double time_taken = ((double)t)/CLOCKS_PER_SEC; // in seconds
         num[i] = time_taken;
